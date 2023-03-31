@@ -4,11 +4,15 @@ import com.sun.jna.Native;
 import com.sun.jna.Pointer;
 import hello.Libcpp_lib_demoLibrary;
 import hello.MyUser;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
 
 import java.nio.IntBuffer;
 
-public class App{
+@SpringBootApplication
+@EnableConfigurationProperties
+public class JnaApp {
     public static void main(String[]args){
 
 //        System.setProperty("jna.debug_load","true"); // 输出JNA debug信息
